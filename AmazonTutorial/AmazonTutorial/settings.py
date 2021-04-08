@@ -51,10 +51,10 @@ PROXY_POOL_ENABLED = True
 #}
 
 
-DOWNLOADER_MIDDLEWARES = {
-    'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware': None,
-    'scrapy_user_agents.middlewares.RandomUserAgentMiddleware': 400,
-}
+# DOWNLOADER_MIDDLEWARES = {
+#     'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware': None,
+#     'scrapy_user_agents.middlewares.RandomUserAgentMiddleware': 400,
+# }
 
 # Enable or disable downloader middlewares
 # See https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
@@ -62,12 +62,12 @@ DOWNLOADER_MIDDLEWARES = {
 #    'AmazonTutorial.middlewares.AmazontutorialDownloaderMiddleware': 543,
 #}
 
-DOWNLOADER_MIDDLEWARES = {
-    # ...
-    'scrapy_proxy_pool.middlewares.ProxyPoolMiddleware': 610,
-    'scrapy_proxy_pool.middlewares.BanDetectionMiddleware': 620,
-    # ...
-}
+# DOWNLOADER_MIDDLEWARES = {
+#     # ...
+#     'scrapy_proxy_pool.middlewares.ProxyPoolMiddleware': 610,
+#     'scrapy_proxy_pool.middlewares.BanDetectionMiddleware': 620,
+#     # ...
+# }
 
 # Enable or disable extensions
 # See https://docs.scrapy.org/en/latest/topics/extensions.html
